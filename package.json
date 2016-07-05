@@ -1,0 +1,28 @@
+{
+  "name": "MakeBlock_Web_UITest",
+  "version": "1.0.0",
+  "description": "MakeBlock_Web_UITest",
+  "keywords": [
+    "MakeBlock",
+    "UITest"
+  ],
+  "dependencies": {
+    "macaca-utils": "~0.1.8"
+  },
+  "devDependencies": {
+    "jshint": "*",
+    "macaca-cli": "^1.0.15",
+    "pre-commit": "1.1.1",
+    "webdriver-client": "~1.0.0",
+	"mysql":"2.11.1"
+  },
+  "scripts": {
+    "test": "make test-pc",
+    "jshint": "make jshint"
+  },
+  "pre-commit": [
+    "jshint"
+  ],
+  "homepage": "https://github.com/macacajs/macaca-test-sample",
+  "license": "MIT"
+}
