@@ -26,11 +26,11 @@ test-android: install
 test-pc:
 	macaca install chrome
 	macaca doctor
-	macaca run --verbose -d ./macaca-test/test-pc/*.test.js
+	macaca run --verbose -d ./macaca-test/*.test.js
 travis-pc:
 	${npm_bin}/macaca install chrome
 	${npm_bin}/macaca doctor
-	${npm_bin}/macaca run -d ./macaca-test/test-pc/*.test.js --no-window
+	${npm_bin}/macaca run -d ./macaca-test/*.test.js --no-window
 travis: install travis-pc
 	@echo travis passed
 travis-android: install
